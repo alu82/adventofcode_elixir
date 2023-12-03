@@ -49,5 +49,5 @@ defmodule Day01 do
 
 end
 
-Day01.part1()
-Day01.part2()
+Day01.part1() #1931
+Day01.part2() # 83105

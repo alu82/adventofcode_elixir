@@ -2,8 +2,8 @@ defmodule Day02 do
 
   def part1() do
     read_input()
-    |> Enum.map(fn g -> extract_game(g) end)
-    |> Enum.filter(fn g -> is_valid_game(g) end)
+    |> Enum.map(&extract_game/1)
+    |> Enum.filter(&is_valid_game/1)
     |> Enum.map(fn {id, _} -> id end)
     |> Enum.sum
     |> IO.puts
@@ -11,8 +11,8 @@ defmodule Day02 do
 
   def part2() do
     read_input()
-    |> Enum.map(fn g -> extract_game(g) end)
-    |> Enum.map(fn g -> calc_power(g) end)
+    |> Enum.map(&extract_game/1)
+    |> Enum.map(&calc_power/1)
     |> Enum.map(fn {_, power} -> power end)
     |> Enum.sum
     |> IO.puts
