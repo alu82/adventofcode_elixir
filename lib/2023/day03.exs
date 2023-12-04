@@ -167,9 +167,6 @@ defmodule Day03 do
   end
 
 
-
-
-
   defp read_input() do
     {:ok, input} = File.read(Path.dirname(__ENV__.file) <> "/day03.input")
     String.split(input, "\n", trim: true)
