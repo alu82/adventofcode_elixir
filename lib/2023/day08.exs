@@ -55,7 +55,7 @@ defmodule Day08 do
     map = read_input() |> read_map()
     [start_nodes, end_nodes] = get_ghost_start_end(map)
     paths = start_nodes |> Enum.map(&navigate(map, &1, end_nodes, 0, false))
-    lcm(1,1, paths) |> IO.inspect()
+    lcm(1, 1, paths) |> IO.inspect()
   end
 
   defp read_input() do
