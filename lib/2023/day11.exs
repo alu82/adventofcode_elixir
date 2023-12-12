@@ -16,7 +16,6 @@ defmodule Day00 do
     |> Enum.sum()
 
     IO.puts(distances/2)
-
   end
 
   def part2() do
