@@ -1,11 +1,15 @@
 defmodule Day00 do
 
   def part1() do
-    read_input()
+    solve()
   end
 
   def part2() do
 
+  end
+
+  defp solve() do
+    read_input()
   end
 
   defp read_input() do
